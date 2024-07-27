@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://jhekxs51yu06"]
+
+[ext_resource type="Texture2D" uid="uid://btfstxrappqbj" path="res://addons/Tiny Swords/Resources/Gold Mine/GoldMine_Active.png" id="1_p6y1t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvdrq"]
+size = Vector2(132, 20)
+
+[node name="mina" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_nvdrq")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(2, -22)
+texture = ExtResource("1_p6y1t")
